@@ -1,3 +1,4 @@
+
 Code Nodes execute input python code, accepting inputs of any type, and give outputs of any type. They're intended to help with jury rigging workflows together, providing an option to perform custom code without having to create a dedicated node for it.
 
 Since any python code can be run (without sandboxing), users should be cautious about using workflows containing Code Nodes they've acquired from outside sources (though I guess the same applies to mindlessly downloading nodes off the net, too :P).
@@ -41,7 +42,8 @@ outputs[0] = combined
 outputs[1] = concatenated
 outputs[2] = averaged
 ```
-
+## Installation
+Clone this repo into the `custom_nodes` folder.
 ## Wishlist
 - Warn user the first time a workflow with a Code Node present would be run, highlighting the nodes and contents so they can check the included code.
 - Maybe options for sandboxing, or at least a sandboxed alternative node(?)
